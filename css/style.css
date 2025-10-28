@@ -1,0 +1,183 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #2c5282;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #3182ce;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #2c5282;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Formulário */
+form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+legend {
+    color: #2c5282;
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+button {
+    background-color: #2c5282;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3182ce;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c5282;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    line-height: 1.5;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
+
+/* Estilos para a seção de contato */
+address {
+    font-style: normal;
+    line-height: 1;
+}
+
+address p {
+    margin-bottom: 0.5rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
