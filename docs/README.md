@@ -16,6 +16,8 @@ UNICSUL-DFEW-EsperienciaPratica/
 │   ├── ong.png
 │   ├── recriatech.png
 │   └── voluntarios.png
+├── img/
+│   └── cadastro.js
 ├── pages/
 │   ├── cadastro.html
 │   └── projetos.html
@@ -39,6 +41,7 @@ UNICSUL-DFEW-EsperienciaPratica/
 
 - HTML5
 - CSS3
+- JavaScript
 
 ---
 
