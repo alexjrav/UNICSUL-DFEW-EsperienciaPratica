@@ -1,0 +1,283 @@
+/* Variáveis de cores para temas */
+:root[data-theme="light"] {
+    /* Tema claro (padrão) */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3efeff8;
+    --text-primary: #333333;
+    --text-secondary: #163068;
+    --accent-color: #0066cc;
+    --border-color: #dddddd;
+    --header-bg: #6a8ceb;
+    --header-text: #ffffff;
+    --button-bg: #2c5282;
+    --button-text: #ffffff;
+    --input-border: #ddd;
+    --focus-shadow: rgba(49, 130, 206, 0.1);
+    --error-color: #dc2626;
+    --success-color: #15803d;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+:root[data-theme="dark"] {
+    --bg-primary: #121212;
+    --bg-secondary: #202020;
+    --text-primary: #ffffff;
+    --text-secondary: #2f5fc7;
+    --accent-color: #4da6ff;
+    --border-color: #404040;
+    --link-color: #66b3ff;
+    --header-bg: #111f31;
+    --header-text: #ffffff;
+    --button-bg: #4da6ff;
+    --button-text: #121212;
+    --input-border: #404040;
+    --focus-shadow: rgba(77, 166, 255, 0.1);
+    --error-color: #fca5a5;
+    --success-color: #86efac;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+:root[data-theme="high-contrast"] {
+    --bg-primary: #000000;
+    --bg-secondary: #000000;
+    --text-primary: #00ff00;
+    --text-secondary: #ffff00;
+    --accent-color: #ffff00;
+    --border-color: #ffff00;
+    --link-color: #00ff00;
+    --header-bg: #000000;
+    --header-text: #ffffff;
+    --button-bg: #000000;
+    --button-text: #ffff00;
+    --input-border: #ffffff;
+    --focus-shadow: none;
+    --error-color: #ff0000;
+    --success-color: #00ff00;
+    --shadow: none;
+}
+
+/* Aplicação dos temas */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s, color 0.3s;
+}
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+section {
+    background-color: var(--bg-secondary);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+}
+
+div.endereco-detalhes{
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px dotted var(--border-color);
+}
+
+/* Cabeçalhos e texto */
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-primary);
+    margin-bottom: 0.5em;
+}
+h1,
+h2 {
+    color: var(--text-secondary);
+    margin-bottom: 0.5em;
+    font-size: 2rem;
+}
+
+/* Formulários acessíveis */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border: 1px solid var(--input-border);
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px var(--focus-shadow);
+    outline: none;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: 2px solid var(--accent-color);
+}
+
+button:hover,
+button:focus {
+    background-color: var(--accent-color);
+    color: var(--button-text);
+}
+
+/* Alertas e mensagens */
+.alert {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.alert-error {
+    color: var(--error-color);
+    border-color: var(--error-color);
+}
+
+.alert-success {
+    color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+/* Barra de acessibilidade */
+.accessibility-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.accessibility-button {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 4px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.accessibility-button:hover,
+.accessibility-button:focus {
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+    outline: none;
+}
+
+.accessibility-button:focus {
+    box-shadow: 0 0 0 3px var(--accent-color);
+}
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    z-index: 1001;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Links e elementos interativos */
+a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus {
+    opacity: 0.9;
+    outline: none;
+    box-shadow: 0 0 0 3px var(--accent-color);
+}
+
+/* Formulários */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(var(--accent-color), 0.3);
+}
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+th,
+td {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--bg-secondary);
+}

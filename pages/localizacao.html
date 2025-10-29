@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localização | ONG RecriaTech</title>
+    <meta name="description" content="Encontre a localização da ONG RecriaTech">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/accessibility.css">
 </head>
 
 <body>
     <header>
-        <img src="../img/recriatech.png" alt="Logo da ONG RecriaTech" width="750">
+        <img src="../img/recriatech.png" alt="Logo da ONG RecriaTech" width="200" height="100">
         <h1>Nossa Localização</h1>
         <nav>
-            <ul>
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos Sociais</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="localizacao.html">Localização</a></li>
+            <ul role="menu">
+                <li role="menuitem"><a href="../index.html">Início</a></li>
+                <li role="menuitem"><a href="projetos.html">Projetos Sociais</a></li>
+                <li role="menuitem"><a href="cadastro.html">Cadastro</a></li>
+                <li role="menuitem"><a href="localizacao.html" aria-current="page">Localização</a></li>
             </ul>
         </nav>
     </header>
@@ -25,8 +27,7 @@
     <main>
         <section>
             <h2>Como Chegar</h2>
-            <p>Estamos localizados no Guará I, em Brasília - DF. Venha nos visitar e conhecer nosso trabalho de perto!
-            </p>
+            <p>Estamos localizados no Guará I, em Brasília - DF. Venha nos visitar e conhecer nosso trabalho de perto!</p>
 
             <div class="info-localizacao">
                 <div class="endereco-detalhes">
@@ -55,10 +56,11 @@
 
                 <div id="mapa" class="mapa">
                     <iframe src="https://www.google.com/maps?q=-15.821571,-47.9910799&hl=pt-BR&z=15&output=embed"
-                        width="600" height="450" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
+                        width="800" height="400" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        aria-label="Mapa mostrando a localização da ONG RecriaTech">
                     </iframe>
-                    
+
                 </div>
             </div>
         </section>
@@ -71,7 +73,8 @@
         <p>&copy; ONG RecriaTech – Reciclagem e Educação Sustentável. Todos os direitos reservados.</p>
     </footer>
 
-
+    <!-- Scripts -->
+    <script src="../js/accessibility.js"></script>
 </body>
 
 </html>
