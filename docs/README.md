@@ -12,10 +12,19 @@ Este projeto consiste em uma página web responsiva para uma ONG fictícia chama
 UNICSUL-DFEW-EsperienciaPratica/
 │   index.html
 ├── css/
+│   ├── accessibility.css
 │   └── style.css
 ├── img/
+│   ├── doacao.png
+│   ├── ong.png
+│   ├── recriatech.png
+│   └── voluntarios.png
+├── js/
+│   ├── accessibility.js
+│   └── cadastro.js
 ├── pages/
 │   ├── cadastro.html
+│   ├── localizacao.html
 │   └── projetos.html
 └── docs/
 	└── README.md
@@ -25,7 +34,7 @@ UNICSUL-DFEW-EsperienciaPratica/
 
 ## ✨ Funcionalidades
 
-- **Página inicial** com apresentação da ONG, missão e informações de contato.
+- **Página inicial** com apresentação da ONG e informações de contato.
 - **Página de projetos sociais**: divulgação de ações, oportunidades de voluntariado e instruções para doação.
 - **Página de cadastro de voluntários**: formulário para inscrição, com validação de campos.
 - **Layout responsivo**: compatível com dispositivos móveis e desktops.
@@ -36,6 +45,9 @@ UNICSUL-DFEW-EsperienciaPratica/
 ## 🛠️ Tecnologias Utilizadas
 
 - HTML5
+- CSS3
+- JavaScript
+- Acessibilidade (WCAG 2.1 Nível AA)
 
 ---
 

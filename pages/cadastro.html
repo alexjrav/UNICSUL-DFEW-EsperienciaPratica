@@ -5,25 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro | ONG RecriaTech</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Formulário de cadastro para voluntários da ONG RecriaTech">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/accessibility.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.3/imask.min.js"></script>
+    <script src="../js/cadastro.js" defer></script>
 </head>
 
 <body>
     <header>
+        <img src="../img/recriatech.png" alt="Logo da ONG RecriaTech" width="200" height="100">
         <h1>Cadastro de Voluntários</h1>
         <nav>
-            <ul>
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos Sociais</a></li>
+            <ul role="menu">
+                <li role="menuitem"><a href="../index.html">Início</a></li>
+                <li role="menuitem"><a href="projetos.html">Projetos Sociais</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Preencha o Formulário</h2>
+            <h2>Cadastre-se e Seja um Voluntário</h2>
             <form>
                 <fieldset>
                     <legend>Informações Pessoais</legend>
@@ -52,7 +57,7 @@
                     <input type="text" id="endereco" name="endereco" required>
 
                     <label for="cep">CEP:</label>
-                    <input type="text" id="cep" name="cep" required placeholder="00000-000">
+                    <input type="text" id="cep" name="cep" required placeholder="00000-000" aria-label="CEP">
 
                     <label for="cidade">Cidade:</label>
                     <input type="text" id="cidade" name="cidade" required>
@@ -61,7 +66,7 @@
                     <input type="text" id="estado" name="estado" maxlength="2" required placeholder="SP">
                 </fieldset>
 
-                <button type="submit">Enviar Cadastro</button>
+                <button type="submit" aria-label="Enviar formulário de cadastro">Enviar Cadastro</button>
             </form>
         </section>
     </main>
@@ -70,9 +75,11 @@
         <p>Autor: Álex Junior Amarilha Valério</p>
         <p>RGM: 46190856</p>
         <p>E-mail: alex.valerio@cs.cruzeirodosul.edu.br</p>
-        <p>&copy; 2025 ONG Esperança Viva. Todos os direitos reservados.</p>
+        <p>&copy; ONG RecriaTech – Reciclagem e Educação Sustentável. Todos os direitos reservados.</p>
     </footer>
-    
+
+    <!-- Scripts -->
+    <script src="../js/accessibility.js"></script>
 </body>
 
 </html>
